@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Кетеринг</title>
+<style>
+:root{--bg:#faf6f0;--card:#fff;--tx:#2b2118;--mu:#7a6a5a;--ac:#b4401f;--bd:#e8dccd;color-scheme:light dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1814;--card:#2a231d;--tx:#f3eadf;--mu:#b5a592;--ac:#e0663f;--bd:#443a30}}
+:root[data-theme="dark"]{--bg:#1d1814;--card:#2a231d;--tx:#f3eadf;--mu:#b5a592;--ac:#e0663f;--bd:#443a30}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.4}
+.w{max-width:600px;margin:0 auto;padding:12px 14px 140px}
+h1{font-size:20px;margin:4px 0 8px}
+h2{font-size:16px;margin:20px 0 4px}
+.tabs{display:flex;gap:6px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:6px 0;z-index:5}
+.tabs button,.ch button{flex:1;padding:10px 4px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:inherit;font-size:14px}
+.tabs .on,.ch .on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.ch{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.ch button{min-width:52px}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin-bottom:8px}
+.row{display:flex;align-items:center;gap:10px}
+.i{flex:1}.i b{display:block;font-weight:600}.i small{color:var(--mu);display:block}
+.p{color:var(--ac);font-weight:600;font-size:13px;text-align:right;white-space:nowrap}
+.q{display:flex;align-items:center;gap:8px}
+.q button{width:34px;height:34px;border-radius:50%;border:1px solid var(--bd);background:var(--bg);color:var(--tx);font-size:18px}
+.q span{min-width:24px;text-align:center}
+ol,ul{padding-left:20px;margin:6px 0}li{margin-bottom:4px}
+.n{color:var(--mu);font-size:13px}
+input,textarea{width:100%;padding:10px;border:1px solid var(--bd);border-radius:10px;background:var(--card);color:var(--tx);font:inherit;margin-bottom:8px}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--bd);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px))}
+.bar>div{max-width:600px;margin:0 auto}
+.t{display:flex;justify-content:space-between;font-weight:700;margin-bottom:8px}
+.r{display:flex;gap:8px}
+.r button{flex:1;padding:12px;border-radius:10px;border:0;font:inherit;font-weight:600;background:var(--ac);color:#fff}
+.r .g{background:var(--bg);color:var(--tx);border:1px solid var(--bd)}
+.hide{display:none}.r a{flex:1;text-align:center;padding:12px;border-radius:10px;font-weight:600;text-decoration:none;background:var(--ac);color:#fff}.f{text-align:center;color:var(--mu);font-size:12px;margin-top:30px}.f div{display:flex;justify-content:center;gap:16px;margin-top:8px}.f img{width:64px;height:64px;border-radius:50%;border:1px solid var(--bd)}
+</style>
+<meta name="theme-color" content="#b4401f">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Кетеринг">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+</head>
+<body>
+<div class="w">
+<h1>Кетеринг</h1>
+<div class="tabs"><button data-t="a" class="on">Понуда</button><button data-t="b">Пакети</button><button data-t="c">Нарачка</button></div>
+
+<div id="a">
+<p style="font-size:15px">Ве молиме наведете ни за колку лица станува збор и дали преферирате класично седење или централно послужување на шведска маса, а ние со задоволство ќе ви препорачаме соодветна понуда.</p>
+<h2>Што нудиме</h2>
+<ol><li>Похована даска (мрсна или посна), со можност за додатоци</li><li>Ладна даска 3×3, или комбо со похована даска</li><li>Мешана скара</li><li>Канапеи и солени залачиња</li><li>Салати, мини бургери, такоси</li><li>Солени пецива</li><li>Десерти</li><li>Подготовка и печење (свинско и јагнешко)</li></ol>
+<p class="n">Во „Пакети" гледате колку храна препорачуваме за колку лица, а во „Нарачка" сами си бирате.</p>
+<h2>Важни информации</h2>
+<ul><li>Нарачка најдоцна 2 дена пред настанот.</li><li>Сето е свежо подготвено од нас, без користење готови купечки производи.</li><li>Даските се за 5 лица. За повеќе лица, во „Пакети" ви покажуваме колку препорачуваме.</li><li>Ако сакате повеќе кашкавал, пилешки прсти, пирошки или зденки, додатоците се наплаќаат посебно.</li><li>Количината на канапеи е според бројот на гости, консултирајте се со нас.</li><li>Канапе вид 8 е по ваш избор (напишете или испратете слика).</li></ul>
+<div class="c" style="margin-top:14px"><div class="i"><b>Контакт</b><small>Јавете се на <a href="tel:+38977802077" style="color:var(--ac)">077/802-077</a> или пишете ни на инстаграм @ja_tate_i_bate_</small></div></div>
+<div class="f">Со поддршка на<div><img src="data:image/jpeg;base64,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" alt="Ја, Тате и Бате"><img src="data:image/jpeg;base64,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" alt="Пекара Гани-Мел"></div></div>
+</div>
+
+<div id="b" class="hide"><div class="c"><b>Како препорачуваме</b><ul><li>Седење: на поголеми маси споени препорачуваме да се намали бројот на даските, за да не останува храна.</li><li>Шведска маса: повеќе мали залаци (канапеи, бургери, салати во чашки), лесно се земаат со рака.</li></ul></div>
+<div class="ch" id="mo"><button data-m="s" class="on">Седење</button><button data-m="b">Централно</button></div>
+<div class="ch" id="nn"></div>
+<div id="pk"></div>
+<p class="n">Ова се наши препораки. Цената е збир од ставките, а пецивата, канапеите и салатите се мешано, по просечна цена. Точните видови ги бирате во „Нарачка". За повеќе лица или други желби јавете ни се.</p>
+</div>
+
+<div id="c" class="hide">
+<div id="m"></div>
+<h2>Потребни податоци за нарачката</h2>
+<input id="nm" placeholder="Име и презиме">
+<input id="ph" type="tel" placeholder="Телефон">
+<input id="dt" placeholder="Датум, час и место (достава/подигање)">
+<input id="pn" type="number" inputmode="numeric" placeholder="Број на лица"><input id="pp" placeholder="Седење или централно">
+<textarea id="nt" rows="2" placeholder="Мрсно/посно, алергии, друго"></textarea>
+</div>
+</div>
+
+<div class="bar hide" id="bar"><div>
+<div class="t"><span>Вкупно</span><span id="tot">0 ден</span></div><div class="n" id="av"></div>
+<div class="r"><button class="g" id="rs">Исчисти</button><button id="cp">Копирај</button><a href="https://instagram.com/ja_tate_i_bate_">Инстаграм</a></div>
+</div></div>
+
+<script>
+// price:null = цена ќе се додаде
+var C=[
+{t:"Похована даска",i:[
+["poh","Похована даска мрсна (5 лица)","даска",800,"Сето е свежо подготвено од нас, без користење готови купечки производи. Кашкавал, зденки, пирошки, пилешки прсти, тиквички."],
+["pohp","Похована даска посна (5 лица)","даска",800,"Посен кашкавал, тикви, фиш фингерс, посна пирошка, топчиња од компир, прстени од кромид."],
+["k1","+ Кашкавал","100 гр",70],["k2","+ Пилешки прсти","100 гр",60],["k3","+ Пирошка","парче",40],["k4","+ Зденка","парче",30]]},
+{t:"Ладна даска, скара",i:[
+["lad","Ладна даска 3×3 (5 лица)","даска",750,"3 вида сувомесно, 3 вида млечни производи, урнебес, крекери."],
+["lad2","Ладна даска со апетизери (5 лица)","даска",980,"3 вида сувомесно, 3 вида млечни производи, урнебес, крекери, апетизери, маслинки, суво и свежо овошје."],
+["kmb","Комбо: ладна даска и похована даска (5 лица)","комбо",1000],
+["skara","Мешана скара (5 лица)","сет",1200,"Ребро, вешалица, стек, плескавица, ќебапи, колбас, помфрит."],
+["usl","Подготовка и печење (свинско и јагнешко)","услуга",2000]]},
+{t:"Солени пецива",i:[
+
+["kif","Кифли","парче",10],["kon","Конус полнет","парче",20],["mban","Мини баник","парче",20],["mpir","Мини пирошка","парче",15],["mgev","Мини ѓеврек (стапче сусам или круг)","парче",10],
+["pog","Погача (стандардна големина)","парче",500]]},
+{t:"Салати",i:[
+
+["s1","Цезар","чашка",70],["s2","Туна","чашка",70],["s3","Шопска","чашка",60],["s4","Паста","чашка",60],["s5","Урда","чашка",60],["s6","Мајонез","чашка",60],["s7","Пилешка","чашка",60],["s8","Таратор","чашка",50],
+["msal","Мешана салата","порција",450,"Сирење, тиквичка, морков, цвекло, зелка, домат, краставичка, варен компир."],
+["tsal","Салата со туна","порција",250,"Марула, туна, кромид, пченка, маслинки, лимон."]]},
+{t:"Мини залаци",i:[
+["burg","Мини бургер (свинско или говедско)","парче",60,"Пупка, чедар, мини плескавица, марула, мајо."],
+["tac","Такос","парче",60,"Чедар, пилешко, марула."],
+["tor","Тортиља","парче",30,"Салама, кашкавал, марула, декор маслинка."]]},
+{t:"Канапеи",i:[
+
+["v1","Вид 1: шери, кашкавал, чајна, краставичка, намаз","парче",30],
+["v2","Вид 2: маслинка, салама, кашкавал, намаз","парче",25],
+["v3","Вид 3: шери, сирење, намаз, багет","парче",25],
+["v4","Вид 4: кашкавал, салама, домат, мајо, багет","парче",30],
+["v5","Вид 5: чајна, маслинка, домат, мајо, багет","парче",30],
+["v6","Вид 6: туна, марула, багет","парче",25],
+["v7","Вид 7: домат и босилек, багет","парче",25],
+["v8","Вид 8: по избор на гостинот (збор или слика)","парче",null]]},
+{t:"Солени залачиња",i:[
+["r1","Ролат Обланда","парче",30,"Павлака, салама."],["r2","Ролат со ајвар","парче",40],["r3","Ролат со спанаќ","парче",40],
+["tp","Солена бомбица","парче",20,"Сусам, ленено семе, афион."],["ek","Солен еклер","парче",40]]},
+{t:"Десерти",i:[
+["d1","Рафаело","парче",20],["d2","Гнездо","парче",20],["d3","Бајадера","парче",20],["d4","Емби","парче",20],["d5","Крцкава бомбица","парче",20],
+["kol","Ситни колачи","1 кг",1200,"60 парчиња. Се бираат од: рафаело, гнездо, бајадера, емби, крцкава бомбичка."],
+["cizk","Чашка чизкејк","чашка",60],["tir","Чашка тирамису","чашка",70],["kro","Крофна","парче",30,"Изберете боја."]]}
+];
+var ALL={},q={},PC=[10,20,30,40,50,60],PB=[10,20,30,40,50,60,70,80,90,100,110,120,130,140,150],M="s",N=10,T=0;
+function av(){var n=+document.getElementById("pn").value;return 0}
+C.forEach(function(s){s.i.forEach(function(i){ALL[i[0]]=i})});
+var G={pec:["pec","Солени пецива (мешано)","парче",15],kan:["kan","Канапеи (мешано)","парче",27],sal:["sal","Салати во чашки (по избор)","чашка",61],blc:["blc","Чашка благо (по избор)","чашка",65]};for(var g in G)ALL[g]=G[g];
+function f(x){return Math.round(x).toLocaleString("mk-MK")+" ден"}
+function pk(m,n){var a={10:[2,2,2,2],20:[3,3,3,4],30:[5,4,5,5],40:[7,6,7,7],50:[9,7,9,9],60:[10,9,10,10]}[n],K=n/10,t={10:25,20:45,30:70,40:90,50:115,60:140,70:160,80:185,90:205,100:230,110:255,120:275,130:300,140:320,150:345},SC={10:10,20:17,30:27,40:35,50:45,60:53,70:63,80:70,90:80,100:90,110:95,120:105,130:110,140:120,150:130};
+return m=="s"?[["poh",a[0]],["skara",a[2]],["lad",a[1]],["msal",a[3]],["pec",n==10?30:n*3.5],["kol",n/20]]:[["kan",t[n]],["skara",K],["poh",K],["burg",n],["sal",SC[n]],["lad",K],["blc",n]];}
+function drawP(){
+ document.getElementById("nn").innerHTML=(M=="s"?PC:PB).map(function(n){return '<button data-n="'+n+'"'+(n==N?' class="on"':'')+'>'+n+'</button>'}).join("");
+ document.querySelectorAll("#mo button").forEach(function(b){b.className=b.dataset.m==M?"on":""});
+ var L=pk(M,N),s=0,h='<div class="c">';
+ L.forEach(function(x){var i=ALL[x[0]],v=i[3]*x[1];s+=v;h+='<div class="row"><div class="i"><b>'+(x[0]=="kol"?String(x[1]).replace(".",",")+" кг "+i[1].toLowerCase()+" ("+Math.round(x[1]*60)+" парчиња, 3 по лице)":x[1]+" × "+i[1])+'</b></div><div class="p">'+f(v)+'</div></div>'});
+ h+='<hr><div class="row"><div class="i"><b>Препорака: '+(M=="s"?"седење":"централно")+', '+N+' лица</b><small>'+f(s/N)+' по лице'+'</small></div><div class="p" style="font-size:18px">'+f(s)+'</div></div><div class="r" style="margin-top:8px"><button id="use">Префрли во нарачка</button></div></div>';
+ document.getElementById("pk").innerHTML=h;
+}
+function msg(){
+ var l=["Нарачка за кетеринг:"];
+ for(var id in q){if(q[id]>0){var i=ALL[id];l.push("• "+q[id]+" × "+i[1]+(i[3]?" = "+f(i[3]*q[id]):" (цена по договор)"))}}
+ l.push("Вкупно: "+document.getElementById("tot").textContent);var a=av();if(a)l.push("Аванс 50%: "+f(a));var pn=document.getElementById("pn").value;if(pn)l.push("Број на лица: "+pn);l.push("Нарачка најдоцна 2 дена пред настанот.");
+ ["nm","ph","dt","pp","nt"].forEach(function(k){var v=document.getElementById(k).value.trim();if(v)l.push(v)});
+ return l.join("\n");
+}
+function drawC(){
+ var h="",s=0,np=false;
+ C.forEach(function(sec){h+="<h2>"+sec.t+"</h2>";sec.i.forEach(function(i){
+  var n=q[i[0]]||0;if(n>0){if(i[3])s+=i[3]*n;else np=true}
+  h+='<div class="c"><div class="row"><div class="i"><b>'+i[1]+'</b><small>/ '+i[2]+'</small>'+(i[4]?'<small>'+i[4]+'</small>':'')+'</div><div class="p">'+(i[3]?f(i[3]):"по договор")+'</div><div class="q"><button data-i="'+i[0]+'" data-d="-1">−</button><span>'+n+'</span><button data-i="'+i[0]+'" data-d="1">+</button></div></div></div>';
+ })});
+ document.getElementById("m").innerHTML=h;
+ document.getElementById("tot").textContent=f(s)+(np?" + по договор":"");T=s;var a=av();document.getElementById("av").textContent=a?"Аванс 50% (над 30 лица): "+f(a):"";
+}
+function tab(t){["a","b","c"].forEach(function(x){document.getElementById(x).className=x==t?"":"hide"});
+ document.querySelectorAll(".tabs button").forEach(function(b){b.className=b.dataset.t==t?"on":""});
+ document.getElementById("bar").className=t=="c"?"bar":"bar hide";
+ if(t=="b")drawP();if(t=="c")drawC();window.scrollTo(0,0);}
+document.addEventListener("click",function(e){
+ var b=e.target.closest("button");if(!b)return;
+ if(b.dataset.t)tab(b.dataset.t);
+ else if(b.dataset.m){M=b.dataset.m;if(M=="s"&&N>60)N=60;drawP()}
+ else if(b.dataset.n){N=+b.dataset.n;drawP()}
+ else if(b.id=="use"){q={};var gl=[];pk(M,N).forEach(function(x){if(G[x[0]])gl.push(x[1]+" "+G[x[0]][1].toLowerCase());else q[x[0]]=x[1]});document.getElementById("nt").value=gl.length?"Уште за избор: "+gl.join(", "):"";document.getElementById("pn").value=N;document.getElementById("pp").value=M=="s"?"седење":"централно";tab("c")}
+ else if(b.dataset.i){var y=window.scrollY,i=b.dataset.i;q[i]=Math.max(0,(q[i]||0)+ +b.dataset.d*(i=="kol"?0.5:1));drawC();window.scrollTo(0,y)}
+ else if(b.id=="rs"){q={};["nm","ph","dt","pn","pp","nt"].forEach(function(k){document.getElementById(k).value=""});drawC()}
+ else if(b.id=="cp"){var t=msg();try{navigator.clipboard.writeText(t).then(function(){b.textContent="Копирано!"})}catch(x){b.textContent="Означи рачно"}setTimeout(function(){b.textContent="Копирај нарачка"},1500)}
+});
+document.getElementById("pn").addEventListener("input",drawC);
+
+var SK="ketering-client-v1";
+function sv(){try{var f={};["nm","ph","dt","pn","pp","nt"].forEach(function(k){f[k]=document.getElementById(k).value});localStorage.setItem(SK,JSON.stringify({q:q,M:M,N:N,f:f}))}catch(e){}}
+function ld(){try{var s=JSON.parse(localStorage.getItem(SK)||"null");if(!s)return;q=s.q||{};M=s.M||"s";N=s.N||10;if(M=="s"&&N>60)N=60;for(var k in (s.f||{})){var e=document.getElementById(k);if(e)e.value=s.f[k]}drawC()}catch(e){}}
+document.addEventListener("click",function(){setTimeout(sv,0)});document.addEventListener("input",sv);ld();
+</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js')})}</script>
+</body>
+</html>
